@@ -6,13 +6,10 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
     <!--  for certification effct, stop on touch -->
-    <script>
-        const slider = document.getElementById('slider');
-        // Pause on touch (mobile)
-        slider.addEventListener('touchstart', () => {
+    <script> const slider = document.getElementById('slider'); // Pause on touch (mobile)
+ slider.addEventListener('touchstart', () => {
             slider.classList.add('touching');
-        });
-        // Resume on touch end
+        });// Resume on touch end
         slider.addEventListener('touchend', () => {
             slider.classList.remove('touching');
         });
